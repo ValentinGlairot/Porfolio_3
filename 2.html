@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet - Création d'une base de données</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        a.project-link {
+            display: inline-block;
+            background-color: #1F2937; /* Bleu sombre pour correspondre au style du site */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px; /* Pour l'effet de bulle */
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        a.project-link:hover {
+            background-color: #374151; /* Légère variation du bleu sombre sur hover */
+        }
+
+        footer {
+            background-color: #1F2937; /* Même couleur que le haut de page */
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .image-container {
+            border: 6px solid #1F2937; /* Couleur principale pour le cadre avec un trait plus épais */
+            border-radius: 10px; /* Coins arrondis */
+            padding: 0; /* Pas d'espace intérieur pour que le cadre soit à la taille exacte de l'image */
+            margin-bottom: 16px; /* Espace entre les images */
+            display: inline-block; /* Ajuste la taille du conteneur à celle de l'image */
+            vertical-align: top; /* Pour aligner le texte avec les images */
+        }
+
+        .large-img {
+            width: 100%; /* Taille pour MCD et MLD */
+            height: auto; /* Assurer le ratio d'aspect */
+        }
+
+        .small-img {
+            width: 90%; /* Taille plus petite pour MPD, ajustée */
+            height: auto; /* Assurer le ratio d'aspect */
+        }
+
+        .label {
+            display: block; /* Pour mettre le label sur une nouvelle ligne */
+            margin-right: 10px; /* Espace entre le label et l'image */
+            font-weight: bold; /* Mettre le texte en gras */
+            text-align: right; /* Alignement à droite pour le label */
+            font-size: 1.5rem; /* Taille de police augmentée pour le label */
+        }
+
+        .image-wrapper {
+            display: flex; /* Utiliser flexbox pour aligner le label et l'image */
+            align-items: center; /* Centrer verticalement */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-gray-900 text-white">
+        <div class="container mx-auto py-6 text-center">
+            <h1 class="text-4xl font-bold">Création d'une base de données</h1>
+        </div>
+    </header>
+
+    <!-- Project Details Section -->
+    <section id="project-details" class="py-10">
+        <div class="container mx-auto px-4 flex">
+            <div class="w-1/2 pr-4"> <!-- Images à gauche -->
+                <div class="image-wrapper">
+                    <span class="label">MCD</span>
+                    <div class="image-container">
+                        <img src="MCD.png" alt="Modèle Conceptuel de Données" class="large-img rounded-lg">
+                    </div>
+                </div>
+
+                <div class="image-wrapper">
+                    <span class="label">MLD</span>
+                    <div class="image-container">
+                        <img src="MLD.png" alt="Modèle Logique de Données" class="large-img rounded-lg">
+                    </div>
+                </div>
+
+                <div class="image-wrapper">
+                    <span class="label">MPD</span>
+                    <div class="image-container">
+                        <img src="MPD.png" alt="Modèle Physique de Données" class="small-img rounded-lg">
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/2 flex justify-center items-center"> <!-- Texte à droite avec centré -->
+                <div>
+                    <h2 class="text-3xl font-bold text-center">Détails du projet</h2> <!-- Agrandi -->
+                    <p class="mt-4 text-2xl leading-relaxed text-center"> <!-- Taille de police augmentée -->
+                        Ce projet consistait à créer une base de données pour la gestion des données relatives à la qualité de l'air. L'objectif était de centraliser et d'organiser les données afin de permettre une analyse plus efficace et une meilleure prise de décision.
+                        <br><br>
+                        J'ai utilisé MySQL pour concevoir la base de données, avec des tables optimisées pour stocker les informations de mesure et les métadonnées associées. Ce projet m'a permis d'améliorer mes compétences en SQL, en modélisation de données et en optimisation de requêtes.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="index.html" class="mt-6 inline-block project-link">Retour à la page précédente</a> <!-- Lien vers la page principale -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Glairot Valentin. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
